@@ -1,0 +1,93 @@
+#Slides, #About, #AboutText, #AboutProp, #Midia, 
+#Advertisers, #Publishers, #Academy, #AcademyImgCont, #Doubts, #Social{
+    position: relative;
+    width: 100%;
+    min-height: 20px;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#AboutText, #AboutProp, #Midia, #Advertisers, #Publishers, #Doubts, #Social{
+    padding: 30px;
+}
+
+#AboutText, #AboutProp, #Midia, #Advertisers, #Publishers, #Academy, #Doubts{
+    border-bottom: 10px solid #FFF;
+}
+
+#Slides{
+    padding-top: 70px;
+}
+
+#Slides img{
+    width: 100%;
+}
+
+#AboutProp, #Midia, #Doubts{
+    background-color: #c7d301;
+    text-align: center;
+    color: #FFF;
+}
+
+#Advertisers, #Publishers{
+    background-color: #e2e2e2;
+}
+
+#Academy{
+    background: linear-gradient(#FFF,#FFF,#FFF,#DDD);
+    padding: 0;
+    padding-bottom: 40px;
+}
+
+#Academy p{
+    padding: 0 20px 20px 20px;
+}
+
+#AcademyImgCont{
+    height: 200px;
+    overflow: hidden;
+    background-image: url(../../assets/slide3.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+
+#AcademyImgCont img{
+    width: 100%;
+    height: auto;
+}
+
+#Social{
+    background-color: #42505f;
+    text-align: center;
+}
+
+#Social img{
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    #AboutText, #AboutProp, #Midia, #Advertisers, #Publishers, #Doubts, #Social{
+        padding: 30px 15px;
+    }
+
+    #Doubts img{
+        width: 70px;
+    }
+
+    #AboutProp{
+        font-size: 9px;
+    }
+    
+    #AboutProp{
+        padding: 20px 15px;
+    }
+
+    #AcademyImgCont{
+        height: 100px;
+    }
+  }

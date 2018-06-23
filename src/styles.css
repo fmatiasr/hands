@@ -1,1 +1,119 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    font-size: 14px;
+    color:#42505f;
+    float: left;
+}
+
+h1{
+    color: #c7d301;
+    letter-spacing: -2px;
+    margin: 0;
+    font-weight: normal;
+}
+
+h2{
+    color: #42505f;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+p{
+    margin: 30px 0;
+}
+
+#Top{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    float: left;
+    background-color: #42505f;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #FFF;
+    z-index: 1;
+}
+
+#Top img{
+    width: 150px;
+    height: auto;
+}
+
+#HamburgerMenu{
+    width: 20px;
+    min-height: 16px;
+    border: 1px solid #FFF;
+    float: right;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.hambLine{
+    border-top: 1px solid #FFF;
+    margin-bottom: 6px;
+}
+
+.hambLine:last-of-type{
+    margin-bottom: 0;
+}
+
+.btnGray, .btnYell{
+    min-width: 200px;
+    height: auto;
+    border: 1px solid #FFF;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    background-color: #42505f;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.btnYell{
+    background-color: #c7d301;
+}
+
+.yellow{
+    color: #c7d301!important;
+}
+
+.white{
+    color: #FFF!important;
+}
+
+.detailHeader{
+    width: 200px;
+    position: relative;
+    left: 50%;
+    margin-bottom: 20px;
+}
+
+.detailHeaderCont{
+  position: absolute;
+  left: -51px;
+  width: 75px;
+  height: 5px;
+  background-color: #c7d301;
+}
+
+@media screen and (max-width: 768px) {
+    html, body{
+        font-size: 12px;
+    }
+    h1, h2{
+        letter-spacing: 0;
+    }
+
+    .btnGray, .btnYell{
+        width: 75%;
+        min-width: unset;
+        font-size: 12px;
+    }
+  }

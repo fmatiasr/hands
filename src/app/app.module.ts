@@ -2,15 +2,28 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AdmComponent } from './adm/adm.component';
+import { ProdutosComponent } from './produtos/produtos.component';
+import { CasesComponent } from './cases/cases.component';
+import { CasesService } from './services/cases.service';
+import { ProductsService } from './services/products.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AdmComponent,
+    ProdutosComponent,
+    CasesComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    CasesService,
+    ProductsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
