@@ -17,11 +17,46 @@
 }
 
 #Slides{
+    overflow: hidden;
     padding-top: 70px;
 }
 
 #Slides img{
     width: 100%;
+}
+
+#SlideProp{
+    position: absolute;
+    bottom: 10%;
+    right: -40px;
+    background-color: rgba(200, 212, 0, 0.7);
+    color: #FFF;
+    width: 50%;
+    height: 25%;
+    border-radius: 100px 0 0 100px;
+    padding: 20px;
+    border: 0px solid #c7d301;
+}
+
+#SlideProp span{
+    position: relative;
+    top: 32%;
+    left: 20px;
+    font-size: 2.4em;
+    float: left;
+    padding: 0 20px;
+}
+
+#SlideProp p{
+    position: relative;
+    top: 5%;
+    width: 250px;
+    float: left;
+    padding-right: 50px;
+    padding-left: 20px;
+    border-left: 1px solid #FFF;
+    margin-left: 20px;
+    text-align: left;
 }
 
 #AboutProp, #Midia, #Doubts{
@@ -47,7 +82,7 @@
 #AcademyImgCont{
     height: 200px;
     overflow: hidden;
-    background-image: url(../../assets/slide3.jpg);
+    background-image: url(../../assets/img/slide3.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;

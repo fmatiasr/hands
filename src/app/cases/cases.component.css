@@ -15,18 +15,21 @@
 .casesCont{
     position: relative;
     width: 20%;
-    min-height: 250px;
+    height: 50%;
     float: left;
-    border: 1px solid #42505f;
     text-align: center;
     padding: 10px;
     margin: 4% 0 4% 4%;
     box-sizing: border-box;
+    background-image: url(../../assets/img/phone-img.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .casesCont img{
-    width: 100%;
+    width: 92%;
     margin-top: 20px;
+    margin-bottom: 41%;
 }
 
 .casesOne{
@@ -44,9 +47,13 @@
     }
 
     .casesCont {
-      width: 96%;
+      width: 76%;
       min-height: 200px;
-      margin: 4% 2% 0 2%;
+      margin: 4% 13% 0 13%;
       font-size: 10px;
+    }
+
+    .sobra{
+        display: none;
     }
   }

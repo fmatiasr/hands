@@ -1,9 +1,37 @@
 <div id="Top">
-  <img src="../assets/hands-logo.png" alt="" />
-  <div id="HamburgerMenu">
+  <nav>
+    <img src="../assets/img/hands-logo.png" alt="" />
+    <ul>
+      <li>
+        <a href="#">Sobre a <strong>HANDS</strong></a>
+      </li>
+      <li>
+        <a href="#">Produtos</a>
+      </li>
+      <li>
+        <a href="#">Media Kit</a>
+      </li>
+      <li>
+        <a href="#">Cases</a>
+      </li>
+      <li>
+        <a href="#">Anunciantes</a>
+      </li>
+      <li>
+        <a href="#">Publishers</a>
+      </li>
+      <li>
+        <a href="#"><strong>HANDS</strong> Academy</a>
+      </li>
+      <li>
+        <a href="#">Contato</a>
+      </li>
+    </ul>
+  </nav>
+  <div id="HamburgerMenu" (click)="menuHam($event)">
     <div class="hambLine"></div>
     <div class="hambLine"></div>
     <div class="hambLine"></div>
   </div>
 </div>
-<app-home></app-home>
+<router-outlet></router-outlet>
