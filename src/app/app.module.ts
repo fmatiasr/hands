@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AdmComponent } from './adm/adm.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { CasesComponent } from './cases/cases.component';
 import { CasesService } from './services/cases.service';
@@ -15,7 +14,6 @@ import { appRoutes } from './app.route';
   declarations: [
     AppComponent,
     HomeComponent,
-    AdmComponent,
     ProdutosComponent,
     CasesComponent
   ],
