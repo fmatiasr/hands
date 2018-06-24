@@ -55,6 +55,8 @@ h2{
     color: #42505f;
     letter-spacing: -2px;
     margin: 0;
+    font-size: 27px;
+    font-weight: 600;
 }
 
 p{
@@ -159,7 +161,7 @@ nav ul li a:hover{
 }
 
 .detailHeader{
-    width: 200px;
+    width: 10px;
     position: relative;
     left: 50%;
     margin-bottom: 20px;
@@ -167,7 +169,7 @@ nav ul li a:hover{
 
 .detailHeaderCont{
   position: absolute;
-  left: -51px;
+  left: -80px;
   width: 75px;
   height: 5px;
   background-color: #c7d301;

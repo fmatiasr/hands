@@ -82,10 +82,11 @@
 #AcademyImgCont{
     height: 200px;
     overflow: hidden;
-    background-image: url(../../assets/img/slide3.jpg);
+    background-image: url(../../assets/img/slide2.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background-position-y: 10px;
     margin-bottom: 40px;
 }
 
@@ -103,6 +104,15 @@
     width: 30px;
     height: auto;
     margin-right: 5px;
+}
+
+#AboutProp h2{
+    font-size: 15px;
+}
+
+#Doubts p{
+    color: #42505f;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
