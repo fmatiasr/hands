@@ -29,6 +29,11 @@
     margin-top: 20px;
 }
 
+.productsOne{
+    left: -65px;
+    width: 100px;
+}
+
 @media screen and (max-width: 768px) {
     #Products{
         padding: 30px 15px;

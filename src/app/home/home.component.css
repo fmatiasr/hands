@@ -19,6 +19,12 @@
 #Slides{
     overflow: hidden;
     padding-top: 70px;
+    height: 500px;
+    background-image: url(../../assets/img/slide2.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 500px;
+    background-position: top center;
+    background-attachment: fixed;
 }
 
 #Slides img{
@@ -80,19 +86,13 @@
 }
 
 #AcademyImgCont{
-    height: 200px;
-    overflow: hidden;
-    background-image: url(../../assets/img/slide2.jpg);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position-y: 10px;
-    margin-bottom: 40px;
-}
-
-#AcademyImgCont img{
     width: 100%;
-    height: auto;
+    height: 250px;
+    overflow: hidden;
+    background-image: url(../../assets/img/slide4.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-bottom: 40px;
 }
 
 #Social{
@@ -110,9 +110,38 @@
     font-size: 15px;
 }
 
+#Midia h2, #Midia p{
+    margin: 10px 0 15px 0;
+}
+
 #Doubts p{
     color: #42505f;
     font-size: 20px;
+}
+
+.anunciantesOne{
+    left: -88px;
+    width: 90px;
+}
+
+.publishersOne{
+    left: -73px;
+    width: 85px;
+}
+
+@media screen and (max-width: 1470px) {
+
+    #SlideProp p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 830px) {
+
+    #SlideProp span{
+        left: unset;
+        padding: unset!important;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -133,6 +162,35 @@
     }
 
     #AcademyImgCont{
-        height: 100px;
+        height: 200px;
+        background-size: cover;
+    }
+
+    #Slides{
+        height: 250px;
+        background-position: top center;
+        background-attachment: unset;
+        background-size: cover;
+    }
+  }
+
+  @media screen and (max-width: 610px) {
+    #SlideProp span{
+        top:33%!important;
+        font-size: 1.5em!important;
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+    #SlideProp span{
+        top:37%!important;
+        font-size: 1.2em!important;
+    }
+  }
+
+  @media screen and (max-width: 410px) {
+
+    #SlideProp span{
+        font-size: 1.0em!important;
     }
   }
