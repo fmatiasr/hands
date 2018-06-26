@@ -3,21 +3,9 @@
     <div class="detailHeader">
       <div class="detailHeaderCont productsOne"></div>
     </div>
-    <div class="productsCont">
-      <img src="../../assets/img/m3p.gif" alt="M3P" />
-      <p>MÍDIA PROGRAMÁTICA</p>
-    </div>
-    <div class="productsCont">
-      <img src="../../assets/img/vma.gif" alt="VMA" />
-      <p>VÍDEO</p>
-    </div>
-    <div class="productsCont">
-      <img src="../../assets/img/mdm.gif" alt="MDM" />
-      <p>MOBILE DATA MANAGEMENT</p>
-    </div>
-    <div class="productsCont">
-      <img src="../../assets/img/wifi.gif" alt="Wifi" />
-      <p>WIFI</p>
+    <div *ngFor="let produto of produtosList" class="productsCont">
+      <img [src]="produto.url" alt="Produto" />
+      <p>{{produto.nome}}</p>
     </div>
     <button class="btnGray" type="button">CARREGAR MAIS</button>
   </div>

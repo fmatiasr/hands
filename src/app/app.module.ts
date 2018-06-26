@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { CasesComponent } from './cases/cases.component';
 import { CasesService } from './services/cases.service';
-import { ProductsService } from './services/products.service';
+import { ProdutosService } from './services/produtos.service';
 import { appRoutes } from './app.route';
 
 @NgModule({
@@ -19,11 +20,12 @@ import { appRoutes } from './app.route';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [
     CasesService,
-    ProductsService
+    ProdutosService
   ],
   bootstrap: [AppComponent]
 })

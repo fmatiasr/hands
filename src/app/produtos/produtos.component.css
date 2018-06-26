@@ -29,6 +29,10 @@
     margin-top: 20px;
 }
 
+.productsCont p{
+  text-transform: uppercase;
+}
+
 .productsOne{
     left: -65px;
     width: 100px;

@@ -1,4 +1,4 @@
-#Slides, #About, #AboutText, #AboutProp, #Midia, 
+#Slides, #About, #AboutText, #AboutProp, #Midia,
 #Advertisers, #Publishers, #Academy, #AcademyImgCont, #Doubts, #Social{
     position: relative;
     width: 100%;
@@ -108,6 +108,7 @@
 
 #AboutProp h2{
     font-size: 15px;
+    letter-spacing: unset;
 }
 
 #Midia h2, #Midia p{
@@ -156,7 +157,7 @@
     #AboutProp{
         font-size: 9px;
     }
-    
+
     #AboutProp{
         padding: 20px 15px;
     }

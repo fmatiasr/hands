@@ -3,17 +3,8 @@
     <div class="detailHeader">
       <div class="detailHeaderCont casesOne"></div>
     </div>
-    <div class="casesCont">
-      <img src="../../assets/img/phone-cont-img.jpg" alt="Wifi" />
-    </div>
-    <div class="casesCont sobra">
-      <img src="../../assets/img/phone-cont2-img.jpg" alt="Wifi" />
-    </div>
-    <div class="casesCont sobra">
-      <img src="../../assets/img/phone-cont3-img.jpg" alt="Wifi" />
-    </div>
-    <div class="casesCont sobra">
-      <img src="../../assets/img/phone-cont4-img.jpg" alt="Wifi" />
+    <div *ngFor="let case of casesList" class="casesCont">
+      <img [src]="case.url" alt="Cases" />
     </div>
     <button class="btnYell" type="button">VEJA MAIS CASES</button>
   </div>
