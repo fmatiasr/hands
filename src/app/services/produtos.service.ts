@@ -15,7 +15,7 @@ export class ProdutosService {
   /**
    * Url da API de produtos
    */
-  produtosUrl = 'assets/produtos.json';
+  produtosUrl = 'http://localhost:53805/produto/';
   /**
    * Construtor da classe de servicos de produtos
    * @param _http
@@ -25,8 +25,7 @@ export class ProdutosService {
    * Pega lista de produtos.
    */
   getListProduct(): Observable<IProduto[]> {
-    return this._http.get<IProduto[]>(this.produtosUrl)
-    .do(data => console.log('All: ' + JSON.stringify(data)))
+    return this._http.get<IProduto[]>(this.produtosUrl + 'listar/')
     .catch(this.handleError);
   }
   /**

@@ -4,8 +4,10 @@
       <div class="detailHeaderCont productsOne"></div>
     </div>
     <div *ngFor="let produto of produtosList" class="productsCont">
-      <img [src]="produto.url" alt="Produto" />
-      <p>{{produto.nome}}</p>
+      <img [src]="produto.Imagem" alt="Produto" />
+      <p>{{produto.Nome}}</p>
     </div>
-    <button class="btnGray" type="button">CARREGAR MAIS</button>
+    <div class="line">
+      <button class="btnGray" type="button">CARREGAR MAIS</button>
+    </div>
   </div>

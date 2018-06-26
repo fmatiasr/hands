@@ -163,6 +163,12 @@ nav ul li a:hover{
   background-color: #c7d301;
 }
 
+.line{
+    width: 100%;
+    min-height: 20px;
+    float: left;
+}
+
 @media screen and (max-width: 1030px) {
 
     #HamburgerMenu{

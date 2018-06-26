@@ -15,17 +15,17 @@ export class CasesService {
   /**
    * Url da API de produtos
    */
-  caseUrl = 'assets/cases.json';
+  caseUrl = 'http://localhost:53805/case/';
   /**
    * Construtor da classe de servicos de cases
    * @param _http
    */
   constructor(private _http: HttpClient) { }
-  /**
+   /**
    * Pega lista de Cases
    */
   getListCases(): Observable<ICase[]> {
-    return this._http.get<ICase[]>(this.caseUrl)
+    return this._http.get<ICase[]>(this.caseUrl + 'listar')
     .do(data => console.log('All: ' + JSON.stringify(data)))
     .catch(this.handleError);
   }
