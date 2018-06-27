@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ProdutosService } from '../services/produtos.service';
-import { IProduto } from '../model/produto.model';
+import { Produto } from '../models/produto.model';
 /**
  * Classe do component de Produtos
  */
@@ -14,7 +14,7 @@ export class ProdutosComponent implements OnInit {
   /**
    * Propriedade de lista de IProduto
    */
-  produtosList: IProduto[];
+  produtosList: Produto[];
   /**
    * Propriedade que seta a mensagem de erro
    */
@@ -29,11 +29,11 @@ export class ProdutosComponent implements OnInit {
    */
   ngOnInit() {
     this._service.getListProduct()
-          .subscribe(
-            produtos => {
-              this.produtosList = produtos;
-            },
-            error => this.errorMessage = <any>error
-          );
+    .subscribe(
+      produtos => {
+        this.produtosList = produtos;
+      },
+      error => this.errorMessage = <any>error
+    );
   }
 }

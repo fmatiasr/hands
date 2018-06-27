@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { CasesService } from '../services/cases.service';
-import { ICase } from '../model/case.model';
+import { Case } from '../models/case.model';
 
 @Component({
   selector: 'app-cases',
@@ -12,7 +12,7 @@ export class CasesComponent implements OnInit {
   /**
    * Propriedade de lista de ICase
    */
-  casesList: ICase[];
+  casesList: Case[];
   /**
    * Propriedade que seta a mensagem de erro
    */
@@ -27,11 +27,11 @@ export class CasesComponent implements OnInit {
    */
   ngOnInit() {
     this._service.getListCases()
-          .subscribe(
-            cases => {
-              this.casesList = cases;
-            },
-            error => this.errorMessage = <any>error
-          );
+    .subscribe(
+      cases => {
+        this.casesList = cases;
+      },
+      error => this.errorMessage = <any>error
+    );
   }
 }

@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/do';
 
-import { IProduto } from '../model/produto.model';
+import { IProduto } from '../interfaces/produto.interface';
 /**
  * Classe dos servicos de Produtos
  */
